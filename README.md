@@ -13,8 +13,10 @@ I wanted to build something people can use to book local, intercity buses
 instead of going to bus offices. I know it probably sounds mundane and basic
 but it's a huge pain in the ass what happens in my city.
 
-A user will be given a downloadable boarding pass. They can print 
-or get the softcopy scanned, either way.
+After successfuly paying for the fare, a user will be issued 
+a downloadable boarding pass, with a unique id marked valid upon 
+payment and invalid upon boarding. They can print 
+or get the softcopy scanned, as they are boarding, either way.
 
 I know i have oversimplified the goings on of the whole booking 
 process, but wtf, who cares. You get the gist.
