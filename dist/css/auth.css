@@ -1,0 +1,314 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: url("/dist/img/auth-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+body header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 10vh;
+  width: 80%;
+  margin: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.6rem;
+}
+
+body header #logo a {
+  text-decoration: none;
+  color: #2d254c;
+}
+
+body main {
+  height: 90vh;
+  width: 80%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+body main #auth {
+  width: 35%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #fff;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.9)), to(rgba(255, 255, 255, 0.5)));
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.5));
+  -webkit-backdrop-filter: blur(2rem);
+          backdrop-filter: blur(2rem);
+  padding: 3rem 0;
+  border-radius: 1rem;
+}
+
+body main #auth #tab-controls {
+  width: 80%;
+  margin: auto;
+  margin-bottom: 2rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+body main #auth #tab-controls #tabs {
+  position: relative;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 40%;
+  border-radius: 50vw;
+}
+
+body main #auth #tab-controls #tabs .active {
+  color: #2d254c;
+}
+
+body main #auth #tab-controls #tabs li {
+  cursor: pointer;
+  color: #a5a3a3;
+}
+
+body main #auth #login-form {
+  width: 70%;
+  margin: auto;
+  display: none;
+}
+
+body main #auth #login-form h2 {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: #2d254c;
+}
+
+body main #auth #login-form .input-control {
+  margin: 1.5rem 0;
+}
+
+body main #auth #login-form .input-control input {
+  background: #e8f0fe;
+  font-size: 1.3rem;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  border-right: 0.3rem solid #2d254c;
+  width: 100%;
+}
+
+body main #auth #login-form .input-control input:focus {
+  outline: none;
+}
+
+body main #auth #login-form .input-control button {
+  margin-top: 1.5rem;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  font-size: 1.4rem;
+  width: 100%;
+  color: #f9fafb;
+  background: #2d254c;
+  cursor: pointer;
+  border: 0.2rem solid #2d254c;
+}
+
+body main #auth #login-form .input-control button:hover {
+  background: transparent;
+  color: #2d254c;
+  font-weight: bold;
+}
+
+body main #auth #login-form .input-control a {
+  font-size: 1.4rem;
+  color: #333;
+}
+
+body main #auth #login-form #login-alt {
+  width: 100%;
+  font-size: 1.4rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+body main #auth #login-form #login-alt #login-socials {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 1.6rem;
+  width: 100%;
+}
+
+body main #auth #login-form #login-alt #login-socials li {
+  padding: 0.5rem 1rem;
+  width: 100%;
+  background: transparent;
+  border: 0.1rem solid #e8f0fe;
+  border-radius: 50vw;
+  margin: 0.5rem auto;
+}
+
+body main #auth #login-form #login-alt #login-socials li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  color: #f9fafb;
+  margin-right: 1rem;
+}
+
+body main #auth #login-form #login-alt #login-socials li a img {
+  width: 3rem;
+  padding-right: 1rem;
+}
+
+body main #auth #login-form #login-alt #login-socials li a p {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+body main #auth #reg-form {
+  width: 70%;
+  margin: auto;
+}
+
+body main #auth #reg-form h2 {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: #2d254c;
+}
+
+body main #auth #reg-form .input-control {
+  margin: 1.5rem 0;
+}
+
+body main #auth #reg-form .input-control input {
+  background: #e8f0fe;
+  font-size: 1.3rem;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  border-right: 0.3rem solid #2d254c;
+  width: 100%;
+}
+
+body main #auth #reg-form .input-control input:focus {
+  outline: none;
+}
+
+body main #auth #reg-form .input-control button {
+  margin-top: 1.5rem;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  font-size: 1.4rem;
+  width: 100%;
+  color: #f9fafb;
+  background: #2d254c;
+  cursor: pointer;
+  border: 0.2rem solid #2d254c;
+}
+
+body main #auth #reg-form .input-control button:hover {
+  background: transparent;
+  color: #2d254c;
+  font-weight: bold;
+}
+
+body main #auth #reg-form .input-control a {
+  font-size: 1.4rem;
+  color: #333;
+}
+
+body main #auth #reg-form #reg-alt {
+  width: 100%;
+  font-size: 1.4rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+body main #auth #reg-form #reg-alt #reg-socials {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 1.6rem;
+  width: 100%;
+}
+
+body main #auth #reg-form #reg-alt #reg-socials li {
+  padding: 0.5rem 1rem;
+  width: 100%;
+  background: transparent;
+  border: 0.1rem solid #e8f0fe;
+  border-radius: 50vw;
+  margin: 0.5rem auto;
+}
+
+body main #auth #reg-form #reg-alt #reg-socials li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  color: #f9fafb;
+  margin-right: 1rem;
+}
+
+body main #auth #reg-form #reg-alt #reg-socials li a img {
+  width: 3rem;
+  padding-right: 1rem;
+}
+
+body main #auth #reg-form #reg-alt #reg-socials li a p {
+  font-size: 1.5rem;
+  color: #333;
+}
+/*# sourceMappingURL=auth.css.map */

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tick.it - Register</title>
+    <link rel="stylesheet" href="/dist/css/bootstrap-icons.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/dist/css/auth.css" />
+  </head>
+  <body>
+    <header>
+      <div id="logo">
+        <a href="/dist/index.html"><h1>Tick.it</h1></a>
+      </div>
+    </header>
+    <main>
+      <div id="auth">
+        <div id="tab-controls">
+          <ul id="tabs">
+            <li id="signup" class="active">Sign Up</li>
+            <li id="login">Log In</li>
+          </ul>
+        </div>
+        <div id="login-form">
+          <h2>
+            Hello, <br />
+            Welcome back.
+          </h2>
+          <form action="#" method="post">
+            <div class="input-control">
+              <input
+                type="email"
+                name="email"
+                id="log-email"
+                placeholder="Email"
+              />
+            </div>
+            <div class="input-control">
+              <input
+                type="password"
+                name="password"
+                id="log-password"
+                placeholder="Password"
+              />
+            </div>
+            <div class="input-control">
+              <button type="submit">Login</button>
+            </div>
+            <div class="input-control">
+              <p><a href="#">Need help?</a></p>
+            </div>
+          </form>
+          <div id="login-alt">
+            <ul id="login-socials">
+              <li>
+                <a href="/dist/user-home.html"
+                  ><img src="/dist/img/google.png" alt="" />
+                  <p>Login with Google</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div id="reg-form">
+          <h2>Let's create your account.</h2>
+          <form action="#" method="post">
+            <div class="input-control">
+              <input type="text" name="name" id="name" placeholder="Name" />
+            </div>
+            <div class="input-control">
+              <input type="tel" name="phone" id="phone" placeholder="Phone" />
+            </div>
+            <div class="input-control">
+              <input type="email" name="email" id="email" placeholder="Email" />
+            </div>
+            <div class="input-control">
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Create Password"
+              />
+            </div>
+            <div class="input-control">
+              <button type="submit">Let's Go!</button>
+            </div>
+          </form>
+          <div id="reg-alt">
+            <ul id="reg-socials">
+              <li>
+                <a href="#"
+                  ><img src="/dist/img/google.png" alt="" />
+                  <p>Sign Up with Google</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="/dist/js/app.js"></script>
+  </body>
+</html>

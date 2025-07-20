@@ -1,0 +1,234 @@
+@import "./config";
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background: url("/dist/img/auth-bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    header {
+        display: flex;
+        height: 10vh;
+        width: 80%;
+        margin: auto;
+        align-items: center;
+        font-size: 1.6rem;
+        #logo a {
+            text-decoration: none;
+            color: $primaryColor;
+        }
+    }
+    main {
+        height: 90vh;
+        width: 80%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        #auth {
+            width: 35%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background: #fff;
+            background: linear-gradient(
+                to bottom,
+                rgba(255, 255, 255, 0.9),
+                rgba(255, 255, 255, 0.5)
+            );
+            backdrop-filter: blur(2rem);
+            padding: 3rem 0;
+            border-radius: 1rem;
+            #tab-controls {
+                width: 80%;
+                margin: auto;
+                margin-bottom: 2rem;
+                font-size: 1.3rem;
+                font-weight: 700;
+                #tabs {
+                    position: relative;
+                    list-style: none;
+                    display: flex;
+                    justify-content: space-between;
+                    width: 40%;
+                    border-radius: 50vw;
+                    .active {
+                        color: $primaryColor;
+                    }
+                    li {
+                        cursor: pointer;
+                        color: #a5a3a3;
+                    }
+                }
+            }
+            #login-form {
+                width: 70%;
+                margin: auto;
+                display: none;
+                h2 {
+                    margin-bottom: 2rem;
+                    font-size: 2rem;
+                    color: $primaryColor;
+                }
+                .input-control {
+                    margin: 1.5rem 0;
+                    input {
+                        background: #e8f0fe;
+                        font-size: 1.3rem;
+                        padding: 0.5rem;
+                        border: none;
+                        border-radius: 0.5rem;
+                        border-right: 0.3rem solid $primaryColor;
+                        width: 100%;
+                        &:focus {
+                            outline: none;
+                        }
+                    }
+                    button {
+                        margin-top: 1.5rem;
+                        border: none;
+                        padding: 0.5rem;
+                        border-radius: 0.5rem;
+                        font-size: 1.4rem;
+                        width: 100%;
+                        color: $textColor;
+                        background: $primaryColor;
+                        cursor: pointer;
+                        border: 0.2rem solid $primaryColor;
+
+                        &:hover {
+                            background: transparent;
+                            color: $primaryColor;
+                            font-weight: bold;
+                        }
+                    }
+                    a {
+                        font-size: 1.4rem;
+                        color: #333;
+                    }
+                }
+                #login-alt {
+                    width: 100%;
+                    font-size: 1.4rem;
+                    text-align: center;
+                    margin-top: 2rem;
+                    #login-socials {
+                        list-style: none;
+                        display: flex;
+                        flex-direction: column;
+                        font-size: 1.6rem;
+                        width: 100%;
+                        li {
+                            padding: 0.5rem 1rem;
+                            width: 100%;
+                            background: transparent;
+                            border: 0.1rem solid #e8f0fe;
+                            border-radius: 50vw;
+                            margin: 0.5rem auto;
+                            a {
+                                display: flex;
+                                align-items: center;
+                                text-decoration: none;
+                                color: $textColor;
+                                margin-right: 1rem;
+                                img {
+                                    width: 3rem;
+                                    padding-right: 1rem;
+                                }
+                                p {
+                                    font-size: 1.5rem;
+                                    color: #333;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            #reg-form {
+                width: 70%;
+                margin: auto;
+                h2 {
+                    margin-bottom: 2rem;
+                    font-size: 2rem;
+                    color: $primaryColor;
+                }
+                .input-control {
+                    margin: 1.5rem 0;
+                    input {
+                        background: #e8f0fe;
+                        font-size: 1.3rem;
+                        padding: 0.5rem;
+                        border: none;
+                        border-radius: 0.5rem;
+                        border-right: 0.3rem solid $primaryColor;
+                        width: 100%;
+                        &:focus {
+                            outline: none;
+                        }
+                    }
+                    button {
+                        margin-top: 1.5rem;
+                        border: none;
+                        padding: 0.5rem;
+                        border-radius: 0.5rem;
+                        font-size: 1.4rem;
+                        width: 100%;
+                        color: $textColor;
+                        background: $primaryColor;
+                        cursor: pointer;
+                        border: 0.2rem solid $primaryColor;
+
+                        &:hover {
+                            background: transparent;
+                            color: $primaryColor;
+                            font-weight: bold;
+                        }
+                    }
+                    a {
+                        font-size: 1.4rem;
+                        color: #333;
+                    }
+                }
+                #reg-alt {
+                    width: 100%;
+                    font-size: 1.4rem;
+                    text-align: center;
+                    margin-top: 2rem;
+                    #reg-socials {
+                        list-style: none;
+                        display: flex;
+                        flex-direction: column;
+                        font-size: 1.6rem;
+                        width: 100%;
+                        li {
+                            padding: 0.5rem 1rem;
+                            width: 100%;
+                            background: transparent;
+                            border: 0.1rem solid #e8f0fe;
+                            border-radius: 50vw;
+                            margin: 0.5rem auto;
+                            a {
+                                display: flex;
+                                align-items: center;
+                                text-decoration: none;
+                                color: $textColor;
+                                margin-right: 1rem;
+                                img {
+                                    width: 3rem;
+                                    padding-right: 1rem;
+                                }
+                                p {
+                                    font-size: 1.5rem;
+                                    color: #333;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

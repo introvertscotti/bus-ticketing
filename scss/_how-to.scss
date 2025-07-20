@@ -1,0 +1,44 @@
+#howto {
+    height: 100vh;
+    width: 80%;
+    margin: auto;
+    padding-top: 5rem;
+    display: flex;
+    color: $primaryColor;
+    font-size: 1.6rem;
+    .section-intro {
+        width: 30%;
+        .section-title {
+            font-size: 3rem;
+        }
+        .section-desc {
+            margin: 2rem 0;
+        }
+    }
+    .booking-steps {
+        display: flex;
+        flex-direction: column;
+        margin-left: 5rem;
+        width: 70%;
+        list-style: none;
+        .step {
+            border: 0.1rem solid $primaryColor;
+            width: 60%;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            font-size: 1.5rem;
+            img {
+                width: 5rem;
+            }
+            .step-title {
+                margin: 0.5rem 0;
+            }
+        }
+        .step:nth-child(2) {
+            margin: 2rem 0 2rem 20%;
+        }
+        .step:last-child {
+            margin: 0 0 0 40%;
+        }
+    }
+}

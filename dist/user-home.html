@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title></title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="/dist/css/bootstrap-icons.css" />
+        <link rel="stylesheet" href="/dist/css/user-home.css" />
+        <script src="/dist/js/html2canvas.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <aside>
+                <div id="logo">
+                    <a href="./user-home.html"><h1>T</h1></a>
+                </div>
+                <ul id="nav-items">
+                    <li id="home-link" class="current">
+                        <a href="./user-home.html"
+                            ><i class="bi bi-house"></i
+                        ></a>
+                    </li>
+                    <li id="noti-link">
+                        <a href="#"><i class="bi bi-bell"></i></a>
+                        <div class="noti-alert"></div>
+                    </li>
+                    <li id="msgs-link">
+                        <a href="#"><i class="bi bi-envelope"></i></a>
+                    </li>
+                    <li id="sett-link">
+                        <a href="#"><i class="bi bi-nut"></i></a>
+                    </li>
+                </ul>
+                <div id="logout">
+                    <a href="authentication.html"
+                        ><i class="bi bi-door-open"></i
+                    ></a>
+                </div>
+            </aside>
+            <main>
+                <div id="main-content">
+                    <div id="search-new">
+                        <div id="search">
+                            <input
+                                type="search"
+                                name="search-trip"
+                                id="search-trip"
+                                placeholder="Search trips..."
+                            />
+                        </div>
+                        <div id="new-trip">
+                            <button><i class="bi bi-plus"></i> New Trip</button>
+                        </div>
+                    </div>
+                    <section>
+                        <div id="greet-date">
+                            <div id="greeting">
+                                <h3></h3>
+                                <p>Have a safe trip to Blantyre today</p>
+                            </div>
+                            <div id="date">
+                                <h3 class="highlight"></h3>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div id="trip-tabs">
+                            <ul id="tabs">
+                                <li id="all-trips-toggle" class="active">
+                                    All
+                                </li>
+                                <li id="upcoming-trips-toggle">Upcoming</li>
+                                <li id="recent-trips-toggle">Recent</li>
+                            </ul>
+                        </div>
+                        <div id="tab-content">
+                            <div id="tab-title">
+                                <h4>All Trips</h4>
+                                <div id="trips-nav">
+                                    <a href="#"
+                                        ><i class="bi bi-chevron-left"></i
+                                    ></a>
+                                    <a href="#"
+                                        ><i class="bi bi-chevron-right"></i
+                                    ></a>
+                                </div>
+                            </div>
+                            <ul id="all-trips"></ul>
+                            <ul id="upcoming"></ul>
+                            <ul id="recent"></ul>
+                        </div>
+                    </section>
+
+                    <section id="notifications">
+                        <h3>Notifications</h3>
+                        <ul class="all-notes"></ul>
+                    </section>
+                    <section id="messages">
+                        <h3>Messages</h3>
+                        <ul class="all-msgs"></ul>
+                    </section>
+                    <section id="settings">
+                        <h3>Settings</h3>
+                    </section>
+                    <section id="results-container">
+                        <img src="/dist/img/32.png" alt="" />
+                        <ul id="search-results"></ul>
+                    </section>
+                </div>
+                <div id="side-content">
+                    <div id="profile">
+                        <img src="/dist/img/user.svg" alt="" />
+                        <div id="user-data">
+                            <h5></h5>
+                            <a href="#">View Profile</a>
+                        </div>
+                    </div>
+                    <div class="spacer"></div>
+                    <div id="tick-prev">
+                        <h3>Ticket</h3>
+                        <div id="ticket">
+                            <div id="passenger-seat">
+                                <div id="pass">
+                                    <span class="tick-title">Passenger</span>
+                                    <h4></h4>
+                                </div>
+                            </div>
+                            <div class="spacer"></div>
+                            <div id="term-tickno-dest-reg">
+                                <div id="terminal">
+                                    <span class="tick-title">Terminal</span>
+                                    <h4></h4>
+                                </div>
+                                <div id="dest">
+                                    <span class="tick-title">Destination</span>
+                                    <h4></h4>
+                                </div>
+                                <div id="tickno">
+                                    <span class="tick-title">Ticket No.</span>
+                                    <h4></h4>
+                                </div>
+                                <div id="bus-reg">
+                                    <span class="tick-title">Bus Reg.</span>
+                                    <h4></h4>
+                                </div>
+                            </div>
+                            <div class="spacer"></div>
+                            <div id="board-pass">
+                                <h4>Boarding Pass</h4>
+                                <img src="" alt="" />
+                            </div>
+
+                            <div id="down-tick" data-html2canvas-ignore="true">
+                                <a href="#"><i class="bi bi-download"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+
+        <script src="/dist/js/user-home.js"></script>
+    </body>
+</html>

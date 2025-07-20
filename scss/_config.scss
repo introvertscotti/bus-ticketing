@@ -1,0 +1,19 @@
+// Resets
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+// Variables
+$primaryColor: #2d254c;
+$secondaryColor: #4cd7f6;
+$accentColor: #fe8360;
+$textColor: #f9fafb;
+
+// Mixins
+
+// Functions

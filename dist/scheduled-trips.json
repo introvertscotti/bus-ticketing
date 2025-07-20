@@ -1,0 +1,48 @@
+{
+	"scheduledTrips": [
+		{
+			"tripId": "TKT_TRP0001",
+			"servLogo": "/dist/img/user5.svg",
+			"servName": "AXA",
+			"busReg": "TO3278",
+			"from": "Wenela, BT",
+			"to": "City Mall, LL",
+			"route": "Zalewa",
+			"date": "20 Dec",
+			"time": "1pm"
+		},
+		{
+			"tripId": "TKT_TRP0002",
+			"servLogo": "/dist/img/user1.svg",
+			"servName": "AXA",
+			"busReg": "BY3271",
+			"from": "Gateway Mall, LL",
+			"to": "Bus Depot, MZZ",
+			"route": "Lakeshore",
+			"date": "05 Jan",
+			"time": "10am"
+		},
+		{
+			"tripId": "TKT_TRP0003",
+			"servLogo": "/dist/img/user3.svg",
+			"servName": "MATOURS",
+			"busReg": "KA3245",
+			"from": "Wenela, BT",
+			"to": "Bus Depot, MZZ",
+			"route": "Lakeshore",
+			"date": "20 Dec",
+			"time": "1pm"
+		},
+		{
+			"tripId": "TKT_TRP0004",
+			"servLogo": "/dist/img/user2.svg",
+			"servName": "MATOURS",
+			"busReg": "LA1234",
+			"from": "Bus Depot, LL",
+			"to": "Wenela, BT",
+			"route": "Liwonde",
+			"date": "31 Dec",
+			"time": "1pm"
+		}
+	]
+}

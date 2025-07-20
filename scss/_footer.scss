@@ -1,0 +1,59 @@
+footer {
+    width: 100%;
+    height: max-content;
+    background: $primaryColor;
+    font-size: 1.6rem;
+    .footer-content {
+        width: 70%;
+        margin: auto;
+        display: flex;
+        padding: 2rem 0 1rem;
+        justify-content: space-between;
+        h2,
+        h3 {
+            color: $accentColor;
+        }
+        .brief-about {
+            flex: 1;
+            p {
+                margin-top: 1rem;
+                color: $textColor;
+            }
+        }
+        .footer-cta {
+            flex: 1;
+            display: flex;
+            justify-content: space-around;
+            .download-app ul {
+                list-style: none;
+                color: #fff;
+                display: flex;
+                margin-top: 1rem;
+                li {
+                    padding: 1rem;
+                }
+            }
+            .contact {
+                a {
+                    text-decoration: none;
+                    color: $accentColor;
+                    margin: 2rem;
+                    &:hover {
+                        color: $textColor;
+                    }
+                }
+                p {
+                    color: $textColor;
+                    margin: 2rem;
+                }
+                #socials {
+                    display: flex;
+                    list-style: none;
+                    font-size: 3rem;
+                    align-items: center;
+                    margin: 1rem 0;
+                }
+            }
+        }
+    }
+}

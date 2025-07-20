@@ -1,0 +1,512 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #ccd3ef;
+    overflow: hidden;
+    font-size: 1.4rem;
+}
+
+.highlight {
+    color: #fe8360;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    background: #f1f1ff;
+    height: 90vh;
+    border-radius: 2rem;
+    margin-top: 5vh;
+    display: flex;
+}
+
+aside {
+    background: #2d254c;
+    width: 10%;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+#logo a {
+    color: #fe8360;
+    font-size: 3rem;
+    text-decoration: none;
+}
+
+#nav-items {
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    font-size: 2.5rem;
+    justify-content: space-between;
+}
+
+#nav-items li {
+    position: relative;
+}
+
+#nav-items .current a {
+    color: #fe8360;
+}
+
+#nav-items .noti-alert {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 1.2rem;
+    width: 1.2rem;
+    background: #fe8360;
+    border-radius: 50%;
+    border: 0.2rem solid #2d254c;
+    color: #fff;
+}
+
+aside a {
+    color: #fff;
+}
+aside a:hover {
+    color: #fe8360;
+}
+
+aside #logout a {
+    font-size: 2rem;
+}
+
+main {
+    background: #f1f1ff;
+    width: 90%;
+    border-radius: 2rem;
+    display: flex;
+    color: #333;
+}
+
+#main-content {
+    width: 75%;
+    padding: 2rem 4rem;
+}
+
+#search-new {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0.5rem;
+}
+
+#search {
+    width: 50%;
+}
+
+#search input {
+    padding: 0.5rem 1rem;
+    font-size: 1.4rem;
+    border-radius: 0.5rem;
+    background: #f7f7ff;
+    border: 0.1rem solid #ccd3ef;
+    margin-right: 0;
+    width: 100%;
+}
+#search input:focus {
+    outline: none;
+}
+
+#new-trip button {
+    background: #fe8360;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+#new-trip button:hover {
+    background: #d6451d;
+    color: #fff;
+}
+
+#notifications {
+    display: none;
+}
+#messages {
+    display: none;
+}
+#settings {
+    display: none;
+}
+
+#results-container {
+    display: none;
+    height: 70%;
+    justify-content: center;
+    align-items: center;
+}
+#results-container > img {
+    width: 50%;
+}
+
+#search-results {
+    width: 100%;
+    margin-top: 2rem;
+    list-style: none;
+    display: none;
+    flex-wrap: wrap;
+}
+
+.trip-result {
+    position: relative;
+    background: #f7f7ff;
+    width: 48%;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin: 0.5rem;
+}
+.trip-result img {
+    width: 20%;
+    margin-right: 2rem;
+}
+
+.trip-details {
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+}
+
+.trip-details-title {
+    font-weight: bold;
+}
+
+.book-btn-overlay {
+    position: absolute;
+    width: 100%;
+    height: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ccd3ef;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    transition: height 0.5s ease-in-out;
+    border-radius: 0.5rem;
+}
+
+.book-btn-overlay button {
+    padding: 0.5rem 2rem;
+    background: #2d254c;
+    font-size: 1.3rem;
+    color: #e7e7e7;
+    border-radius: 0.3rem;
+    border: none;
+    cursor: pointer;
+}
+
+.trip-result button:hover {
+    background: transparent;
+    border: 0.2rem solid #2d254c;
+    color: #2d254c;
+    font-weight: bold;
+}
+.trip-result:hover .book-btn-overlay {
+    height: 100%;
+}
+
+#greet-date {
+    display: flex;
+    justify-content: space-between;
+    background: #fff;
+    margin: 1rem 0;
+    border-radius: 1rem;
+    padding: 1.5rem 2rem;
+    background: #fff;
+}
+
+#greet-date h3 {
+    margin-bottom: 1rem;
+}
+#greet-date p {
+    color: #a0a0a0;
+    font-size: 1.3rem;
+}
+
+#trip-tabs {
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+    padding: 0.5rem 0.5rem;
+    background: #e7e7e7;
+}
+
+#tabs {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+#tabs li {
+    margin-right: 1rem;
+    cursor: pointer;
+    padding: 0.5rem 1.5rem;
+}
+
+#tabs .active {
+    background: #f7f7ff;
+    border-radius: 0.5rem;
+}
+
+.badge {
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    background: #a0a0a0;
+    color: #d6451d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#tab-content h4 {
+    width: 100%;
+}
+
+#tab-content #tab-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#tab-title #trips-nav {
+    display: flex;
+}
+
+#trips-nav a {
+    color: #2d254c;
+    margin-left: 3rem;
+    padding: 0.5rem;
+    background: #e7e7e7;
+    border-radius: 0.3rem;
+}
+
+#tab-content #all-trips {
+    margin-top: 1rem;
+    list-style: none;
+    display: flex;
+}
+#tab-content #upcoming,
+#tab-content #recent {
+    margin-top: 1rem;
+    list-style: none;
+    display: none;
+}
+
+.trip {
+    position: relative;
+    border-radius: 0.5rem;
+    background: #fff;
+    margin-right: 2rem;
+    cursor: pointer;
+}
+
+.trip img {
+    border-radius: 1rem;
+    padding: 0.5rem;
+}
+
+.trip .dest-serv {
+    padding: 0.5rem 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.trip .route {
+    color: #2d254c;
+    padding: 0.25rem 1rem;
+    font-size: 1.2rem;
+}
+
+.route .via {
+    color: #a0a0a0;
+    letter-spacing: 100%;
+    text-align: justify;
+}
+
+.froterm {
+    display: none;
+}
+.tickno {
+    display: none;
+}
+.busreg {
+    display: none;
+}
+
+.destterm {
+    display: none;
+}
+
+.date-time {
+    padding: 0.5rem 1.5rem;
+}
+
+.date-time h5 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+.date-time small {
+    font-weight: normal;
+    font-size: 1.3rem;
+}
+
+.trip:hover .date-time {
+    background: #2d254c;
+    color: #fff;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+
+.trip .cancel-trip {
+    display: none;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: #fe8360;
+    padding: 0.5rem 0.7rem;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.cancel-trip i {
+    font-size: 2rem;
+    color: #fff;
+}
+
+.trip:hover .cancel-trip {
+    display: block;
+}
+
+#side-content {
+    border-bottom-right-radius: 2rem;
+    border-top-right-radius: 2rem;
+    width: 25%;
+    background: #f7f7ff;
+    padding: 2rem 2rem;
+}
+
+#profile {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 2rem;
+}
+
+#profile img {
+    background: #e7e7e7;
+    width: 5rem;
+    height: 5rem;
+    padding: 0.5rem;
+    border-radius: 50%;
+}
+#user-data h5 {
+    font-size: 1.4rem;
+}
+#user-data a {
+    color: #a0a0a0;
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+
+#tick-prev {
+    display: none;
+}
+#tick-prev h3 {
+    margin: 1rem 0 1rem;
+}
+
+#ticket {
+    height: 40rem;
+    position: relative;
+    padding: 1rem;
+    background: #fff;
+    border-radius: 0.5rem;
+    /* border: #ccd3ef 0.1rem solid; */
+    color: #333;
+    font-size: 1.3rem;
+}
+
+#ticket > span {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    background: #f7f7ff;
+    position: absolute;
+}
+
+.spacer {
+    border-bottom: dotted #ccd3ef 1px;
+}
+
+.tick-title {
+    color: #a0a0a0;
+    font-size: 1.3rem;
+}
+
+#ticket h4 {
+    margin-left: 0.5rem;
+}
+
+#passenger-seat {
+    margin: 1rem 0;
+}
+
+#term-tickno-dest-reg {
+    margin: 1rem 0;
+}
+
+#term-tickno-dest-reg > div {
+    margin: 0.5rem 0;
+}
+
+#board-pass {
+    margin: 1rem 0;
+}
+
+#board-pass img {
+    margin: 1rem 0 0 2rem;
+    width: 8rem;
+}
+
+#down-tick {
+    position: absolute;
+    bottom: 4rem;
+    right: 1rem;
+}
+
+#down-tick a {
+    padding: 1rem;
+    background: #ccd3ef;
+    color: #2d254c;
+    border-radius: 1rem;
+}
+/* 
+#ccd3ef
+#2d254c
+#f1f1ff
+#f7f7ff
+*/

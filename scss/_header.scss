@@ -1,0 +1,102 @@
+header {
+    font-size: 1.6rem;
+    position: relative;
+    overflow: hidden;
+    nav {
+        width: 80%;
+        height: 10vh;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        #logo {
+            font-size: 3.5rem;
+            font-weight: bold;
+            a {
+                text-decoration: none;
+                color: $primaryColor;
+                .highlight {
+                    color: $accentColor;
+                }
+            }
+        }
+        #nav-menu {
+            list-style: none;
+            display: flex;
+            width: 30%;
+            justify-content: space-between;
+            a {
+                text-decoration: none;
+                color: $primaryColor;
+                &:hover {
+                    color: $accentColor;
+                }
+            }
+            .start {
+                background: $primaryColor;
+                padding: 1rem 3rem;
+                color: $textColor;
+                font-size: 1.5rem;
+                border-radius: 0.3rem;
+
+                &:hover {
+                    background: transparent;
+                    border: 0.2rem solid $primaryColor;
+                    color: $primaryColor;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+    #showcase {
+        height: 90vh;
+        width: 80%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        #home-illustration {
+            width: 50%;
+        }
+        #site-intro {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            margin: 4rem;
+            h1 {
+                font-size: 4rem;
+            }
+            .intro {
+                margin: 2rem 0 3rem;
+            }
+            #cta {
+                margin-top: 3rem;
+                a {
+                    text-decoration: none;
+                    background: $primaryColor;
+                    padding: 1rem 4rem;
+                    color: $textColor;
+                    font-size: 1.4rem;
+                    border-radius: 0.3rem;
+                    border: 0.2rem solid $primaryColor;
+                    &:hover {
+                        color: $primaryColor;
+                        background: transparent;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+    #shape2 {
+        position: absolute;
+        top: -10rem;
+        right: -25rem;
+        width: 50%;
+        transform: rotateZ(-60deg);
+        height: 90vh;
+        background: $primaryColor;
+        z-index: -3;
+        opacity: 0.4;
+    }
+}
